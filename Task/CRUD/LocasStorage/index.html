@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="text-center shadow pb-2">Local Storage Crud in JavaScript</h1>
+
+        <div id="add-form">
+            <form class="d-flex gap-2 text-end flex-column">
+                <div>
+                    <label for="nstudent">Name : </label>
+                    <input type="text" name="nstudent" id="sname" />
+                </div>
+                <div>
+                    <label for="nsid">Email : </label>
+                    <input type="email" name="nsid" id="semail" />
+                </div>
+                <div>
+                    <button type="button" class="btn btn-success" onclick="add()">Add</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="update-form">
+            <form class="d-flex gap-2 text-end flex-column">
+                <div>
+                    <label for="nuid">Id : </label>
+                    <input type="text" name="nuid" id="eid" disabled>
+                </div>
+                <div>
+                    <label for="nuser">Name : </label>
+                    <input type="text" name="nuser" id="uname">
+                </div>
+                <div>
+                    <label for="numail">E-mail : </label>
+                    <input type="email" name="numail" id="uemail">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-secondary" onclick="update()">Update</button>
+                </div>
+            </form>
+        </div>
+
+        <div style="margin:10px 0">
+            <button onclick="addStudent()" class="btn btn-primary">Add New Student</button>
+        </div>
+        <table class="border shadow w-100 text-center tableData">
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

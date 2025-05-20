@@ -1,0 +1,7 @@
+#add-form,
+#update-form {
+  display: none;
+}
+.thead {
+  height: 45px;
+}
